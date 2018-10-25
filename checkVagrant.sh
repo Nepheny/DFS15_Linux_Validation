@@ -43,17 +43,10 @@ chooseVM() {
     echo -e "$BLUE Veuillez indiquer l'ID d'une VM à éteindre : $CLOSE"
     read VMID
 
-    if [ ! "$(vagrant global-status | grep "running" | awk '{print $1;}')" == "$VMID" ];
-    then
-        echo -e "$RED Erreur : l'ID renseigné ne correspond à aucune VM en fonction.$CLOSE"
-        chooseAction;
-    else
-        vagrant halt $VMID
-        echo -e "$GREEN VM $VMID éteinte. $CLOSE"
-        echo -e "$BLUE ------------------------------------------ $CLOSE"
-        sleep 1
-        chooseAction;
-    fi
+    vagrant halt $VMID
+    echo -e "$BLUE ------------------------------------------ $CLOSE"
+    sleep 1
+    chooseAction;
 
     sleep 1
 }

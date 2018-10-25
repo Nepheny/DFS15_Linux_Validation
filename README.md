@@ -14,7 +14,6 @@
 </br>
 ## Intéractions avec les VM
 - Affichage des machines virtuelles en fonction uniquement.
-- Gestion de l'erreur sur l'ID renseigné pour éteindre la VM.
 </br>
 </br>
 ## Gestion des erreurs
