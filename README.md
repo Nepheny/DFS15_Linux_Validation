@@ -24,6 +24,9 @@
 </br>
 </br>
 ## Utilisation
-Pour lancer le script, il suffit de taper la commande : ```bash checkInstall.sh```
+Pour lancer le script, il suffit de taper la commande :
+```bash
+bash checkInstall.sh
+```
 </br>
 :octocat:
